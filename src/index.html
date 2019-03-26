@@ -5,18 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Zero Waste</title>
-    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
 
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <script>
+  // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyA5c3QxVhf1fbrXpiFFlQs2ZSgae2EPeIM",
+        authDomain: "zero-waste-d5038.firebaseapp.com",
+        databaseURL: "https://zero-waste-d5038.firebaseio.com",
+        projectId: "zero-waste-d5038",
+        storageBucket: "zero-waste-d5038.appspot.com",
+        messagingSenderId: "222059406012"
+    };
+    firebase.initializeApp(config);
+</script> 
 
 </head>
 <body>
-    <form action="">
-        Nombre de usuario<input type="text" placeholder="Nombre de usuario"><br>
-        e-mail<input id="txtEmail" type="email" placeholder="E-mail"><br>
-        Contraseña <input id="txtPassword" type="password" placeholder="Contraseña"><br>
-       <button id="btnLogIn">Ingresar</button>
-       <button id="btnSignUp">Registrarse</button>
-       <button id="btnLogOut">Salir</button>
+    <!--SIGN UP FORM-->
+    <form>
+        E-mail<input id="txtEmailSignUp" type="email" placeholder="E-mail"><br>
+        Contraseña <input id="txtPasswordSignUp" type="password" placeholder="Password"><br>
+        <button id="btnSignUp">Sign up</button>
+    </form>
+    <!--LOG IN FORM-->
+    <form>
+        E-mail<input id="txtEmailLogIn" type="email" placeholder="E-mail"><br>
+        Contraseña <input id="txtPasswordLogIn" type="password" placeholder="Password"><br>
+       <button id="btnLogIn">Log in</button>
     </form>
 
 

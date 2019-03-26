@@ -1,4 +1,34 @@
-(function() {
+function signUp  (e) {
+    e.preventDefault(e);
+    let emailSignUp = document.getElementById("txtEmailSignUp").value;
+    let passwordSignUp = document.getElementById("txtPasswordSignUp").value;
+        
+    firebase.auth().createUserWithEmailAndPassword(emailSignUp, passwordSignUp).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // ...
+        
+      });
+}
+document.getElementById("btnSignUp").addEventListener("click", signUp);
+
+function logIn (e) {
+    e.preventDefault(e);
+    let emailLogIn = document.getElementById("txtEmailLogIn").value;
+    let passwordLogIn = document.getElementById("txtPasswordLogIn").value;
+
+    firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // ...
+      });
+}
+document.getElementById("btnLogIn").addEventListener("click", logIn);
+
+
+/* (function() {
 
 // Initialize Firebase
 const config = {
@@ -59,3 +89,4 @@ firebase.auth().onAuthStateChanged(firebaseUser =>{
 });
 
 });
+*/
