@@ -1,3 +1,4 @@
+//SIGN UP FUNCTION
 function signUp  (e) {
     e.preventDefault(e);
     let emailSignUp = document.getElementById("txtEmailSignUp").value;
@@ -11,20 +12,23 @@ function signUp  (e) {
         
       });
 }
+//SIGN UP BUTTON
 document.getElementById("btnSignUp").addEventListener("click", signUp);
 
+//LOG IN FUNCTION
 function logIn (e) {
     e.preventDefault(e);
     let emailLogIn = document.getElementById("txtEmailLogIn").value;
     let passwordLogIn = document.getElementById("txtPasswordLogIn").value;
 
-    firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+    firebase.auth().signInWithEmailAndPassword(emailLogIn, passwordLogIn).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
         // ...
       });
 }
+//LOG IN BUTTON
 document.getElementById("btnLogIn").addEventListener("click", logIn);
 
 
