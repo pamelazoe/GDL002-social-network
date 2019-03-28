@@ -6,20 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Zero Waste</title>
 
-    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
-    <script>
-  // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyA5c3QxVhf1fbrXpiFFlQs2ZSgae2EPeIM",
-        authDomain: "zero-waste-d5038.firebaseapp.com",
-        databaseURL: "https://zero-waste-d5038.firebaseio.com",
-        projectId: "zero-waste-d5038",
-        storageBucket: "zero-waste-d5038.appspot.com",
-        messagingSenderId: "222059406012"
-    };
-    firebase.initializeApp(config);
-</script> 
-
 </head>
 <body>
     <!--SIGN UP FORM-->
@@ -34,8 +20,11 @@
         Contraseña <input id="txtPasswordLogIn" type="password" placeholder="Password"><br>
        <button id="btnLogIn">Log in</button>
     </form>
-
-
+    <!--LOG OUT SECTION-->
+    <div id="logOutSection">
+       
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
