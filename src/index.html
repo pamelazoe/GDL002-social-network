@@ -9,21 +9,23 @@
 </head>
 <body>
     <!--SIGN UP FORM-->
-    <form>
+    <form id="signUpForm">
         E-mail<input id="txtEmailSignUp" type="email" placeholder="E-mail"><br>
         Contraseña <input id="txtPasswordSignUp" type="password" placeholder="Password"><br>
         <button id="btnSignUp">Sign up</button>
     </form>
     <!--LOG IN FORM-->
-    <form>
+    <form id="logInForm">
         E-mail<input id="txtEmailLogIn" type="email" placeholder="E-mail"><br>
         Contraseña <input id="txtPasswordLogIn" type="password" placeholder="Password"><br>
        <button id="btnLogIn">Log in</button>
     </form>
     <!--LOG OUT SECTION-->
-    <div id="logOutSection">
-       
+    <div id="loggedIn">
+        <button id="btnLogOut">Log out</button>
     </div>
+
+   
     <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
     <script src="main.js"></script>
 </body>
