@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <h4>Registro de Usuarios</h4>
+        <input id="email" type="email" placeholder="Ingresa email">
+        <input id= "password" type="password" placeholder="Ingresa contraseña">
+        <button id="register">Enviar</button>
+        
+
+        <h4>Ingreso  de Usuarios</h4>
+        <input id="email2" type="email" placeholder="Ingresa email">
+        <input id= "password2" type="password" placeholder="Ingresa contraseña">
+        <button id="login">Ingresar</button>
+
+        <div id="onlylogged"></div>
+
+        <h4>PUBLICACIONES</h4>
+        <textarea name="comentarios" rows="10" cols="40"type="text" id="post" placeholder="Escribe lo que quieras"></textarea>
+        <button id="sendPost">Publicar</button> 
+
+       <secccion>
+        <h4>MURO</h4>
+        <div id=showPost></div>
+        
+        </secccion>
+        
+        <!--Firebase-->
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+        <!--cloudFiarebase-->
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+        <script src="" async defer></script>
+        <script src="app.js"></script>
+
+    </body>
+</html>
