@@ -2,12 +2,12 @@
 
 // Initialize Firebase
 var config = {
-  apiKey: "AIzaSyDeIWcAmN-8lvSISlVmHqGscPwuJ-g2aNI",
-  authDomain: "zerowaste-2bdc4.firebaseapp.com",
-  databaseURL: "https://zerowaste-2bdc4.firebaseio.com",
-  projectId: "zerowaste-2bdc4",
-  storageBucket: "zerowaste-2bdc4.appspot.com",
-  messagingSenderId: "429818693589"
+  apiKey: "AIzaSyA5c3QxVhf1fbrXpiFFlQs2ZSgae2EPeIM",
+    authDomain: "zero-waste-d5038.firebaseapp.com",
+    databaseURL: "https://zero-waste-d5038.firebaseio.com",
+    projectId: "zero-waste-d5038",
+    storageBucket: "",
+    messagingSenderId: "222059406012"
 };
 firebase.initializeApp(config);
 
