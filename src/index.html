@@ -5,20 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Zero Waste</title>
-    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
-
 
 </head>
 <body>
-    <form action="">
-        Nombre de usuario<input type="text" placeholder="Nombre de usuario"><br>
-        e-mail<input id="txtEmail" type="email" placeholder="E-mail"><br>
-        Contraseña <input id="txtPassword" type="password" placeholder="Contraseña"><br>
-       <button id="btnLogIn">Ingresar</button>
-       <button id="btnSignUp">Registrarse</button>
-       <button id="btnLogOut">Salir</button>
+    <!--SIGN UP FORM-->
+    <form id="signUpForm">
+        E-mail<input id="txtEmailSignUp" type="email" placeholder="E-mail"><br>
+        Contraseña <input id="txtPasswordSignUp" type="password" placeholder="Password"><br>
+        <button id="btnSignUp">Sign up</button>
     </form>
+    <!--LOG IN FORM-->
+    <form id="logInForm">
+        E-mail<input id="txtEmailLogIn" type="email" placeholder="E-mail"><br>
+        Contraseña <input id="txtPasswordLogIn" type="password" placeholder="Password"><br>
+       <button id="btnLogIn">Log in</button>
+    </form>
+    <!--LOG OUT SECTION-->
+    <div id="loggedIn">
+        <button id="btnLogOut">Log out</button>
+    </div>
 
+<<<<<<< HEAD
     <h4>PUBLICACIONES</h4>
         <textarea name="comentarios" rows="10" cols="40"type="text" id="post" placeholder="Escribe lo que quieras"></textarea>
         <button id="sendPost">Publicar</button> 
@@ -28,6 +35,10 @@
         <div id=showPost></div>
 
 
+=======
+   
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+>>>>>>> upstream/master
     <script src="main.js"></script>
 </body>
 </html>
